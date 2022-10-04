@@ -85,10 +85,10 @@ data "aws_ami" "amazon_linux_2" {
 
 
 resource "aws_instance" "jenkins_inst" {
-  ami                    = data.aws_ami.amazon_linux_2.id
-  instance_type          = "t2.micro"
-  subnet_id              = aws_default_subnet.default_az1.id
-  availability_zone      = var.ZONE1
+  ami               = data.aws_ami.amazon_linux_2.id
+  instance_type     = "t2.micro"
+  subnet_id         = aws_default_subnet.default_az1.id
+  availability_zone = var.ZONE1
   # key_name               = aws_key_pair.my_public_key.key_name
   key_name               = "tchamna_aws"
   vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
@@ -105,13 +105,13 @@ resource "null_resource" "name" {
 
 
   connection {
-    type        = "ssh"
-    user        = var.USER
+    type = "ssh"
+    user = var.USER
     #private_key = file("dovekey")
-    private_key = file("tchamna_aws.pem")  # This key should be in the root folder of your project. Otherwise, you will have to specify its absolute path
+    private_key = file("tchamna_aws.pem") # This key should be in the root folder of your project. Otherwise, you will have to specify its absolute path
 
-    
-    host        = aws_instance.jenkins_inst.public_ip
+
+    host = aws_instance.jenkins_inst.public_ip
   }
 
 
