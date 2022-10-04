@@ -11,7 +11,13 @@ We have split the main terraform file into three files:
   
 <b> Instructions: </b>
 
+<b>I. From AWS Console</b>
+
+- Login to your AWS Account and create an <b>iam user</b> or used and <b>existing iam user</b>, then download the <b>iam credential</b> to configure your local command line interface to communicate with your AWS account.
 - Login to your AWS Account and create a <b>pem</b> Key-Pair. mine is "tchamna_aws.pem", but it is a good practice to give a name that reflect the service you are running. For Example, "jenkins_key.pem"
+
+<b>II. From your Local Computer</b>
+
 - Place the pem key in the root directory of your project
 - Open a terminal. I recommend <b> git bash</b> if you are on windows (download and install it)
 - Change the directory with a cd command from the terminal and point to the directory of your project
