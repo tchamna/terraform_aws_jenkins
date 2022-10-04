@@ -1,0 +1,14 @@
+# Compiled files
+*.tfstate
+*.tfstate.backup
+*.hcl
+*.lock
+*.pub
+*.pem
+
+# Files
+dovekey
+
+# Module directory
+.terraform
+
