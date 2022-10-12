@@ -34,4 +34,4 @@ We have split the main terraform file into three files:
 
 1. Install Chocolatey from the command line (See instructions here: https://chocolatey.org/install)
 2. Open command line as <b> Administrator </b> and paste the following command <b> choco install jenkins </b>
-3. open your browser and paste the following URL: <b> http://localhost:8080/ </b>
+3. Open your browser and paste the following URL: <b> http://localhost:8080/ </b>
