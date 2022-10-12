@@ -32,10 +32,14 @@ We have split the main terraform file into three files:
 
 <b> Bonus: Install Jenkins on Windows </b>
 
-1. Install Chocolatey from the command line (See instructions here: https://chocolatey.org/install)
-2. Open command line as <b> Administrator </b> and paste the following command <b> choco install jenkins </b>
-3. Open your browser and paste the following URL: <b> http://localhost:8080/ </b>
-4. Navigate to the following path in your computer <b> C:\Program Files (x86)\Jenkins\secrets\initialAdminPassword </b>
-5. Copy the initial password and paste it in Jenkins, then click <b> Continue</b> and there you go!
+
+1.Install the right java version (mine is <b>"17.0.4.1" 2022-08-18 LTS</b> at the time I am writting) : https://www.oracle.com/java/technologies/downloads/. Jenkins requires Java 11 or 17 since Jenkins 2.357 and LTS 2.361.1.
+2.  Download Jenkins as a war file from here: https://www.jenkins.io/doc/book/installing/war-file/. 
+3. Create a Folder and place the war file inside
+4. Open a terminal and navigate in that folder
+5. Run the following command <b> java -jar jenkins.war --httpPort=8080 </b> Note that you can change the port; it doesnt have to be 8080
+6. Open a browser and paste the following url: <b>http://localhost:8080/</b>
+7. Jenkins landing page will open and indicate where you can find the initial pasword. You can also find it in your terminal. Just scroll up
+8. Copy the initial password and paste it in Jenkins, then click <b> Continue</b> and there you go!
 
 
