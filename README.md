@@ -35,3 +35,7 @@ We have split the main terraform file into three files:
 1. Install Chocolatey from the command line (See instructions here: https://chocolatey.org/install)
 2. Open command line as <b> Administrator </b> and paste the following command <b> choco install jenkins </b>
 3. Open your browser and paste the following URL: <b> http://localhost:8080/ </b>
+4. Navigate to the following path in your computer <b> C:\Program Files (x86)\Jenkins\secrets\initialAdminPassword </b>
+5. Copy the initial password and paste it in Jenkins, then click <b> Continue</b> and there you go!
+
+
