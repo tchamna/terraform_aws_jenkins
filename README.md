@@ -2,6 +2,8 @@ This is a simple project to deploy a Jenkins server on the AWS Cloud in a Declar
 This eliminates the burden to set Jenkins Server manually.
 The Detailed Video Can be found on <b>AOS Note</b> <a href="https://www.youtube.com/watch?v=9XrYwfIWDL0" target="_blank">YouTube channel</a>
 
+[N.B. You can also install Jenkins on Windows: See instruction the end of this page]
+
 
 We have split the main terraform file into three files:
   - instance.tf: This file is the Main File that declare the resources, the AMI images, the Availability Zones, the ports mapping, the access method, etc.
@@ -27,3 +29,9 @@ We have split the main terraform file into three files:
 -  <b>terraform fmt</b> (This is optional, but good practice): To format and present your terraform in a nice and more presentable way
 -  <b>terraform validate</b> (This is optional): To check compiling and syntax errors in the .tf files
 -  <b>terraform apply</b>: The terraform apply command executes the actions proposed in a Terraform plan.
+
+<b> Bonus: Install Jenkins on Windows </b>
+
+1. Install Chocolatey from the command line (See instructions here: https://chocolatey.org/install)
+2. Open command line as <b> Administrator </b> and paste the following command <b> choco install jenkins </b>
+3. open your browser and paste the following URL: <b> http://localhost:8080/ </b>
